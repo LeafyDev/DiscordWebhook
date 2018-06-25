@@ -48,10 +48,7 @@ namespace DiscordWebhook
             AvatarUrl = avatarUrl;
             IsTTS = isTTS;
             Embeds.Clear();
-            if (embeds != null)
-            {
-                Embeds.AddRange(embeds);
-            }
+            if (embeds != null) Embeds.AddRange(embeds);
 
             return await Send();
         }
